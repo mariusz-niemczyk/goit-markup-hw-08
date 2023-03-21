@@ -5,26 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zadanie domowe 1#</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <a href="#">WebStudio</a>
-      <nav>
-        <ul>
-          <li><a href="#">Agencja</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Kontakt</a></li>
+      <a href="./index.html" class="menu-link-logo-type"
+        ><span class="menu-logo">Web</span>Studio</a
+      >
+      <nav class="navigation">
+        <ul class="navigation-pick">
+          <li><a href="./index.html" class="link">Agencja</a></li>
+          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="#" class="link">Kontakt</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="maiL:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:48111111111">+48 111 111 111</a></li>
+      <ul class="contact-header">
+        <li>
+          <a href="maiL:info@devstudio.com" class="link">info@devstudio.com</a>
+        </li>
+        <li><a href="tel:48111111111" class="link">+48 111 111 111</a></li>
       </ul>
     </header>
     <main>
       <!-- HERO -->
 
-      <section>
+      <section class="hero">
         <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button type="button">Zamów usługę</button>
       </section>
@@ -32,30 +49,30 @@
       <!-- Lorem IPSUM -->
 
       <section>
-        <ul>
+        <ul class="art-main">
           <li>
-            <p>LOREM IPSUM</p>
+            <h4>LOREM IPSUM</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <p>LOREM IPSUM</p>
+            <h4>LOREM IPSUM</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <p>LOREM IPSUM</p>
+            <h4>LOREM IPSUM</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <p>LOREM IPSUM</p>
+            <h4>LOREM IPSUM</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -63,7 +80,7 @@
           </li>
         </ul>
 
-        <div>
+        <div class="wwd">
           <h2>Czym się zajmujemy</h2>
           <ul>
             <li>
@@ -81,10 +98,10 @@
 
       <!-- Nasz zespół-->
 
-      <section>
+      <section class="team-main">
         <h2>Nasz zespół</h2>
 
-        <ul>
+        <ul class="team-secondary">
           <li>
             <img
               src="images/product_designer.jpg"
@@ -92,8 +109,8 @@
               width="810"
               height="780"
             />
-            <p><b>John Doe</b></p>
-            <p>Product Designer</p>
+            <p class="team-name"><b>John Doe</b></p>
+            <p class="team-role">Product Designer</p>
           </li>
           <li>
             <img
@@ -102,8 +119,8 @@
               width="810"
               height="780"
             />
-            <p><b>John Doe</b></p>
-            <p>Frontend Developer</p>
+            <p class="team-name"><b>John Doe</b></p>
+            <p class="team-role">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -112,8 +129,8 @@
               width="810"
               height="780"
             />
-            <p><b>John Doe</b></p>
-            <p>Marketing</p>
+            <p class="team-name"><b>John Doe</b></p>
+            <p class="team-role">Marketing</p>
           </li>
           <li>
             <img
@@ -122,8 +139,8 @@
               width="810"
               height="780"
             />
-            <p><b>John Doe</b></p>
-            <p>UI Designer</p>
+            <p class="team-name"><b>John Doe</b></p>
+            <p class="team-role">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -131,10 +148,12 @@
     <footer>
       <!-- Stopka strony-->
 
-      <a href="#">WebStudio</a>
+      <a href="./index.html" class="menu-link-logo-type-footer"
+        ><span class="menu-logo-footer">Web</span>Studio</a
+      >
 
-      <address>
-        <ul>
+      <address class="contact-main">
+        <ul class="contact-list">
           <li>
             <a href="https://goo.gl/maps/yP13i9epQqiqHnS6A" target="_blank"
               >m. Warszawa, Aleje Jerozolimskie 21</a
