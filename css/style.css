@@ -1,11 +1,12 @@
 /* ROOT */
 
 :root {
-  --background-page-color: #e5e5e5;
-  --background-theme-color: #2f303a;
-  --background-team-color: #f5f4fa;
+  --color-page-background: #e5e5e5;
+  --color-theme-color: #2f303a;
+  --color-team-background: #f5f4fa;
   --full-white-color: #ffffff;
   --color-light-black: #212121;
+  --color-buttom-nav-blue: #2196f3;
 }
 
 a:link {
@@ -16,12 +17,12 @@ a:link {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--background-page-color);
+  background-color: var(--color-page-background);
 }
 
 /* HEADER-INDEX */
 .menu-logo {
-  color: #2196f3;
+  color: var(--color-buttom-nav-blue);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 26px;
   line-height: 1.19;
@@ -35,7 +36,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.navigation-pick {
+.navigation-pick > li > a {
   color: var(--color-light-black);
   font-family: "Roboto";
   font-style: normal;
@@ -46,7 +47,7 @@ body {
 }
 
 .navigation-pick > li > .link:hover {
-  color: #2196f3;
+  color: var(--color-buttom-nav-blue);
   cursor: pointer;
 }
 
@@ -63,10 +64,10 @@ body {
 /* MAIN-INDEX */
 
 .hero {
-  background-color: var(--background-theme-color);
+  background-color: var(--color-theme-color);
 }
 .hero > button {
-  background: #2196f3;
+  background-color: var(--color-buttom-nav-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--full-white-color);
@@ -93,7 +94,7 @@ body {
   color: #fff;
 }
 
-.art-main > p {
+.art-main > li > p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -103,7 +104,7 @@ body {
   color: #757575;
 }
 
-.art-main > h4 {
+.art-main > li > h4 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -125,7 +126,7 @@ body {
   color: var(--color-light-black);
 }
 .team-main > .team-secondary > li {
-  background-color: var(--background-team-color);
+  background-color: var(--color-team-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -169,14 +170,14 @@ body {
 /* MAIN-PORTFOLIO */
 
 .button-list:hover {
-  background: #2196f3;
+  background-color: var(--color-buttom-nav-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   cursor: pointer;
 }
 .button-list {
-  --background-team-color: #f5f4fa;
+  background-color: #f5f4fa;
   border-radius: 4px;
   font-family: "Roboto";
   font-style: normal;
@@ -215,7 +216,7 @@ body {
 /* FOOTER*/
 
 .contact-main {
-  background-color: var(--background-theme-color);
+  background-color: var(--color-theme-color);
 }
 .contact-list > li > a[href="https://goo.gl/maps/yP13i9epQqiqHnS6A"]
 {
@@ -249,23 +250,4 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.menu-link-logo-type-footer {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19px;
-  letter-spacing: 0.03em;
-  color: var(--full-white-color);
-}
-.menu-logo-footer {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
 }
