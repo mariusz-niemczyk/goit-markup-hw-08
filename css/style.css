@@ -1,33 +1,47 @@
+/* ROOT */
+
 :root {
   --background-page-color: #e5e5e5;
-  --background-footer-theme-color: #2f303a;
-}
-body {
-  font-family: "Roboto", sans-serif;
+  --background-theme-color: #2f303a;
+  --background-team-color: #f5f4fa;
+  --full-white-color: #ffffff;
+  --color-light-black: #212121;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+/* BODY-STYLE */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-page-color);
+}
+
+/* HEADER-INDEX */
 .menu-logo {
   color: #2196f3;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
 .menu-link-logo-type {
   color: #000000;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
 .navigation-pick {
-  color: #212121;
+  color: var(--color-light-black);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -41,43 +55,26 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
 }
 
-.link {
-  text-decoration: none;
-}
-.button-list:hover {
-  background: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  cursor: pointer;
-}
-.button-list {
-  background: #f5f4fa;
-  border-radius: 4px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+/* MAIN-INDEX */
+
+.hero {
+  background-color: var(--background-theme-color);
 }
 .hero > button {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #fff;
+  background-color: var(--color-white-color);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center;
@@ -89,7 +86,7 @@ body {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -101,7 +98,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -111,10 +108,10 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--color-light-black);
 }
 
 .wwd > h2 {
@@ -122,18 +119,23 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--color-light-black);
 }
-
+.team-main > .team-secondary > li {
+  background-color: var(--background-team-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-main > h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -145,34 +147,86 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
+  color: var(--color-light-black);
 }
 .team-role {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: #757575;
 }
 
+/* FOOTER-INDEX */
+/* HEADER-PORTFOILO */
+/* MAIN-PORTFOLIO */
+
+.button-list:hover {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-list {
+  --background-team-color: #f5f4fa;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-light-black);
+}
+
+.project-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-light-black);
+}
+.project-type {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.portfolio-list > li {
+  background-color: var(--full-white-color);
+  border: 1px solid #eeeeee;
+}
+
+/* FOOTER*/
+
+.contact-main {
+  background-color: var(--background-theme-color);
+}
 .contact-list > li > a[href="https://goo.gl/maps/yP13i9epQqiqHnS6A"]
 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: #ffffff;
+  background-color: var(--full-white-color);
 }
 
 .contact-list > li > a[href="mailto:info@example.com"] {
@@ -180,7 +234,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
@@ -191,7 +245,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
@@ -201,17 +255,17 @@ body {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 1.19;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  background-color: var(--full-white-color);
 }
 .menu-logo-footer {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
