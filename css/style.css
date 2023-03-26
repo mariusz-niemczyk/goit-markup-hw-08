@@ -1,24 +1,27 @@
 /* ROOT */
 
 :root {
-  --color-page-background: #e5e5e5;
   --color-theme-color: #2f303a;
   --color-team-background: #f5f4fa;
-  --full-white-color: #ffffff;
+  --color-full-white: #ffffff;
   --color-light-black: #212121;
   --color-buttom-nav-blue: #2196f3;
   --color-grey-light: #757575;
 }
-
-a:link {
-  text-decoration: none;
+.link:hover {
+  text-decoration: underline;
 }
-
+button:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style-type: none;
+}
 /* BODY-STYLE */
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--color-page-background);
+  background-color: var(--color-full-white);
 }
 
 /* HEADER-INDEX */
@@ -28,6 +31,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .menu-link-logo-type {
@@ -35,6 +39,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .navigation-pick > li > a {
@@ -45,6 +50,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .navigation-pick > li > .link:hover {
@@ -52,9 +58,6 @@ body {
   cursor: pointer;
 }
 
-.contact-header > li > a:hover {
-  cursor: pointer;
-}
 .contact-header > li > a {
   font-family: "Roboto";
   font-style: normal;
@@ -63,6 +66,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-grey-light);
+  text-decoration: none;
 }
 
 /* MAIN-INDEX */
@@ -70,11 +74,13 @@ body {
 .hero {
   background-color: var(--color-theme-color);
 }
+
 .hero > button {
   background-color: var(--color-buttom-nav-blue);
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--full-white-color);
+  color: var(--color-full-white);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -84,6 +90,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  padding: 10px 41px 10px 42px;
   cursor: pointer;
 }
 .hero > h1 {
@@ -164,14 +171,16 @@ body {
 
 .buttons-style > li > button:hover {
   background-color: var(--color-buttom-nav-blue);
-  color: var(--full-white-color);
+  color: var(--color-full-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   cursor: pointer;
+  padding: 6px 22px 6px 22px;
 }
 .buttons-style > li > button {
   background-color: #f5f4fa;
+  border: none;
   border-radius: 4px;
   font-family: "Roboto";
   font-style: normal;
@@ -181,6 +190,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-light-black);
+  padding: 6px 22px 6px 22px;
 }
 
 .project-name {
@@ -203,7 +213,7 @@ body {
 }
 
 .portfolio-list > li {
-  background-color: var(--full-white-color);
+  background-color: var(--color-full-white);
   border: 1px solid #eeeeee;
 }
 
@@ -211,6 +221,12 @@ body {
 
 .contact-main {
   background-color: var(--color-theme-color);
+}
+.contact-main > .menu-link-logo-type {
+  color: var(--color-full-white);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .contact-list > li > a[href="https://goo.gl/maps/yP13i9epQqiqHnS6A"]
 {
@@ -221,7 +237,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--full-white-color);
+  color: var(--color-full-white);
 }
 
 .contact-list > li > a[href="mailto:info@example.com"] {
