@@ -17,14 +17,39 @@ button:hover {
 ul {
   list-style-type: none;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* BODY-STYLE */
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--color-full-white);
+  box-sizing: border-box;
 }
 
 /* HEADER-INDEX */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .menu-logo {
   color: var(--color-buttom-nav-blue);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -36,13 +61,20 @@ body {
 
 .menu-link-logo-type {
   color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 93px;
 }
-
-.navigation-pick > li > a {
+.navigation {
+  display: flex;
+  gap: 46px;
+  align-items: center;
+  margin-right: 371px;
+}
+.nav-item {
   color: var(--color-light-black);
   font-family: "Roboto";
   font-style: normal;
@@ -53,12 +85,19 @@ body {
   text-decoration: none;
 }
 
-.navigation-pick > li > .link:hover {
+.navigation > .link:hover {
   color: var(--color-buttom-nav-blue);
   cursor: pointer;
 }
 
-.contact-header > li > a {
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-right: 227px;
+}
+.header-contact-link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -71,11 +110,35 @@ body {
 
 /* MAIN-INDEX */
 
-.hero {
+.container-effect {
   background-color: var(--color-theme-color);
 }
+.container-effect-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.effect-tittle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  max-width: 696px;
 
-.hero > button {
+  align-items: center;
+  justify-content: center;
+}
+
+.button-item {
   background-color: var(--color-buttom-nav-blue);
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -86,36 +149,22 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 41px 10px 42px;
   cursor: pointer;
 }
-.hero > h1 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #fff;
+
+.container-effect-art {
+  display: flex;
+}
+.art-main {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  gap: 30px;
 }
 
-.art-main > li > p {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--color-grey-light);
-}
-
-.art-main > li > h4 {
+.title-art-effect {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -124,9 +173,29 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-light-black);
+  margin-bottom: 10px;
+}
+.content-art-effect {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-grey-light);
+}
+.tittle-wwd {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-light-black);
 }
 
-.heading-style > h2 {
+.tittle-our-team {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
