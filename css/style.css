@@ -17,6 +17,9 @@ button:hover {
 ul {
   list-style-type: none;
 }
+img {
+  display: block;
+}
 * {
   padding: 0;
   margin: 0;
@@ -259,6 +262,12 @@ body {
 /* HEADER-PORTFOILO */
 /* MAIN-PORTFOLIO */
 
+.button-pick-effects {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
 .buttons-style > li > button:hover {
   background-color: var(--color-buttom-nav-blue);
   color: var(--color-full-white);
@@ -268,7 +277,12 @@ body {
   cursor: pointer;
   padding: 6px 22px 6px 22px;
 }
-.buttons-style > li > button {
+
+.buttons-style {
+  display: flex;
+  gap: 8px;
+}
+.button-list {
   background-color: #f5f4fa;
   border: none;
   border-radius: 4px;
@@ -283,6 +297,17 @@ body {
   padding: 6px 22px 6px 22px;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-list > li {
+  background-color: var(--color-full-white);
+  border: 1px solid #eeeeee;
+}
+
 .project-name {
   font-family: "Roboto";
   font-style: normal;
@@ -291,6 +316,8 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-light-black);
+  display: flex;
+  padding: 20px 24px 4px;
 }
 .project-type {
   font-family: "Roboto";
@@ -300,24 +327,34 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--color-grey-light);
-}
-
-.portfolio-list > li {
-  background-color: var(--color-full-white);
-  border: 1px solid #eeeeee;
+  display: flex;
+  padding: 4px 24px 20px;
 }
 
 /* FOOTER*/
-
-.contact-main {
+.footer-background {
   background-color: var(--color-theme-color);
 }
-.contact-main > .menu-link-logo-type {
+.footer-box-effect {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 20px;
+}
+.footer-box-effect > a {
   color: var(--color-full-white);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
 .contact-list > li > a[href="https://goo.gl/maps/yP13i9epQqiqHnS6A"]
 {
   font-family: "Roboto";
