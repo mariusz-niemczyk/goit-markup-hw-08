@@ -98,6 +98,12 @@ body {
   text-decoration: none;
 }
 
+.contact-header > .link:hover {
+  color: var(--color-buttom-nav-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .contact-header {
   display: flex;
   justify-content: center;
@@ -213,9 +219,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-light-black);
 }
-.our-team-box {
+
+.our-team-background {
+  background-color: #f5f4fa;
+}
+.tittle-our-team {
   display: flex;
-  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
 }
 
 .tittle-our-team {
@@ -348,9 +359,6 @@ body {
   background-color: var(--color-theme-color);
 }
 
-.footer-box-effect > a:hover {
-  text-decoration: none;
-}
 .footer-box-effect {
   display: flex;
   flex-direction: column;
@@ -403,4 +411,8 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-list > li > a:hover {
+  text-decoration: underline;
 }
