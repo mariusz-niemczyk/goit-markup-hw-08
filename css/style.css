@@ -303,9 +303,15 @@ body {
   gap: 30px;
 }
 
-.portfolio-list > li {
+.portfolio-list > li > h3 {
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+.portfolio-list > li > p {
   background-color: var(--color-full-white);
-  border: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .project-name {
