@@ -34,6 +34,10 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.section-2 {
+  margin-top: -94px;
+}
 /* BODY-STYLE */
 
 body {
@@ -188,9 +192,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-grey-light);
 }
-.tittle-wwd-box {
+.tittle-wwd {
   display: flex;
   padding-bottom: 50px;
+  justify-content: center;
 }
 .wwd-pics-box {
   display: flex;
