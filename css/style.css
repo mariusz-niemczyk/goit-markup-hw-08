@@ -91,6 +91,7 @@ body {
 .navigation > .link:hover {
   color: var(--color-buttom-nav-blue);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .contact-header {
@@ -340,6 +341,10 @@ body {
 /* FOOTER*/
 .footer-background {
   background-color: var(--color-theme-color);
+}
+
+.footer-box-effect > a:hover {
+  text-decoration: none;
 }
 .footer-box-effect {
   display: flex;
