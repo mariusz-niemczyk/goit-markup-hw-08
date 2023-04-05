@@ -114,9 +114,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  max-width: 1200px;
+
   margin-right: 227px;
 }
+.icon-smartphone-pos {
+  color: var(--color-buttom-nav-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.icon-smartphone-pos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
 .header-contact-link {
   font-family: "Roboto";
   font-style: normal;
@@ -131,7 +146,7 @@ body {
 /* MAIN-INDEX */
 
 .container-effect {
-  background-color: var(--color-theme-color);
+  background-image: url("/images/background-header.jpg");
 }
 .container-effect-box {
   display: flex;
