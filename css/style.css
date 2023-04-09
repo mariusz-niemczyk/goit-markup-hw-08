@@ -104,32 +104,26 @@ body {
   text-decoration: none;
 }
 
-.contact-header > .link:hover {
-  color: var(--color-buttom-nav-blue);
-  cursor: pointer;
-  text-decoration: none;
-}
-
 .contact-header {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
-
   margin-right: 227px;
+  gap: 30px;
 }
-.icon-smartphone-pos {
+
+.phone-effect:hover,
+.phone-effect > .link:hover {
   color: var(--color-buttom-nav-blue);
+  --color1: var(--color-buttom-nav-blue);
   cursor: pointer;
   text-decoration: none;
 }
-
-.icon-smartphone-pos {
+.phone-effect {
   display: flex;
-  align-items: center;
   gap: 10px;
-  margin-right: 10px;
-  margin-left: 30px;
+  align-items: center;
 }
 
 .header-contact-link {
