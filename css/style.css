@@ -7,6 +7,7 @@
   --color-light-black: #212121;
   --color-buttom-nav-blue: #2196f3;
   --color-grey-light: #757575;
+  --icon-hover-color: #2196f3;
 }
 .link:hover {
   text-decoration: underline;
@@ -326,9 +327,59 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-grey-light);
-  margin-bottom: 30px;
+}
+.team-media-icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+.team-media-icons > svg {
+  fill: #afb1b8;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
 }
 
+.team-media-icons > svg:hover {
+  fill: var(--color-full-white);
+  background-color: var(--color-buttom-nav-blue);
+}
+.section > h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-light-black);
+}
+.client-logos-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 50px;
+}
+.client-logos {
+  box-sizing: content-box;
+  fill: #afb1b8;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.client-logos:hover {
+  fill: var(--icon-hover-color);
+  border-color: var(--icon-hover-color);
+  cursor: pointer;
+}
 /* FOOTER-INDEX */
 /* HEADER-PORTFOILO */
 /* MAIN-PORTFOLIO */
@@ -412,10 +463,14 @@ body {
 .footer-background {
   background-color: var(--color-theme-color);
 }
+.footer-flex-container {
+  display: flex;
+}
 
 .footer-box-effect {
   display: flex;
   flex-direction: column;
+  margin-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
   gap: 20px;
@@ -469,4 +524,32 @@ body {
 
 .contact-list > li > a:hover {
   text-decoration: underline;
+}
+.join-us {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  gap: 20px;
+}
+.join-us > p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-full-white);
+  margin-top: 72px;
+}
+.join-container > svg {
+  fill: var(--color-full-white);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.join-container > svg:hover {
+  background: var(--icon-hover-color);
 }
