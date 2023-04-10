@@ -112,9 +112,8 @@ body {
   margin-right: 227px;
   gap: 30px;
 }
-
-.phone-effect:hover,
-.phone-effect > .link:hover {
+.phone-effect > a svg:hover,
+.phone-effect > svg:hover {
   color: var(--color-buttom-nav-blue);
   --color1: var(--color-buttom-nav-blue);
   cursor: pointer;
@@ -126,10 +125,36 @@ body {
   align-items: center;
 }
 
+.envelope-effect {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.envelope-effect > a svg:hover,
+.envelope-effect > svg:hover {
+  color: var(--color-buttom-nav-blue);
+  fill: var(--color-buttom-nav-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.envelope-effect {
+  fill: var(--color-grey-light);
+}
+
+.envelope-hover-effect:hover,
+.header-contact-link:hover {
+  color: var(--color-buttom-nav-blue);
+  fill: var(--color-buttom-nav-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .header-contact-link {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -212,6 +237,20 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-grey-light);
+  text-align: justify;
+  max-width: 270px;
+  max-height: 75px;
+}
+.background-art-svg {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 270px;
+  max-height: 120px;
+  background-color: #f5f4fa;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
 }
 .tittle-wwd {
   display: flex;
