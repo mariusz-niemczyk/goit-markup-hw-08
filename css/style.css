@@ -48,7 +48,7 @@ body {
 }
 
 /* HEADER-INDEX */
-.header {
+.header-container {
   border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -166,7 +166,7 @@ body {
 /* MAIN-INDEX */
 
 .container-effect {
-  background-image: url("/images/background-header.jpg");
+  background-image: url("./images/background-header.jpg");
 }
 .container-effect-box {
   display: flex;
