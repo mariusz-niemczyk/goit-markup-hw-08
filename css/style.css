@@ -330,7 +330,8 @@ body {
 }
 .team-media-icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10px;
   padding-top: 16px;
   padding-bottom: 30px;
 }
@@ -363,11 +364,13 @@ body {
   justify-content: center;
   padding-top: 50px;
 }
-.client-logos {
+.border-client-logo {
+  display: flex;
+  justify-content: center;
   box-sizing: content-box;
-  fill: #afb1b8;
   width: 170px;
   height: 92px;
+  fill: #afb1b8;
   align-items: center;
   text-align: center;
   border: 1px solid #afb1b8;
@@ -375,7 +378,7 @@ body {
   color: #afb1b8;
 }
 
-.client-logos:hover {
+.border-client-logo:hover {
   fill: var(--icon-hover-color);
   border-color: var(--icon-hover-color);
   cursor: pointer;
@@ -478,6 +481,7 @@ body {
   margin-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-right: 70px;
   gap: 20px;
 }
 .footer-box-effect > a {
@@ -530,11 +534,10 @@ body {
 .contact-list > li > a:hover {
   text-decoration: underline;
 }
+
 .join-us {
   display: flex;
-  flex-direction: column;
-  padding-left: 70px;
-  gap: 20px;
+  padding-bottom: 20px;
 }
 .join-us > p {
   font-family: "Roboto";
@@ -547,7 +550,11 @@ body {
   color: var(--color-full-white);
   margin-top: 72px;
 }
-.join-container > svg {
+.icon-join-container {
+  display: flex;
+  gap: 10px;
+}
+.icon-join-container > svg {
   fill: var(--color-full-white);
   width: 44px;
   height: 44px;
@@ -555,6 +562,6 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
-.join-container > svg:hover {
+.icon-join-container > svg:hover {
   background: var(--icon-hover-color);
 }
