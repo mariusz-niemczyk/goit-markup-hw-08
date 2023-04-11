@@ -48,7 +48,7 @@ body {
 }
 
 /* HEADER-INDEX */
-.header-container {
+.header {
   border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -109,6 +109,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-right: 227px;
   gap: 30px;
 }
