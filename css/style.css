@@ -109,7 +109,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   margin-right: 227px;
   gap: 30px;
 }
@@ -166,7 +165,7 @@ body {
 /* MAIN-INDEX */
 
 .container-effect {
-  background-image: url("./images/background-header.jpg");
+  background-image: url("/images/background-header.jpg");
 }
 .container-effect-box {
   display: flex;
