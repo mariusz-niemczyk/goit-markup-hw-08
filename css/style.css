@@ -478,7 +478,6 @@ body {
 .footer-box-effect {
   display: flex;
   flex-direction: column;
-  margin-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-right: 70px;
