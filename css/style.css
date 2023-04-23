@@ -264,6 +264,29 @@ body {
   gap: 30px;
   justify-content: center;
 }
+.wwd-pics-pos {
+  position: relative;
+  display: inline-flex;
+}
+.wwd-pics-desc {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-full-white);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 .tittle-wwd {
   font-family: "Roboto";
   font-style: normal;
