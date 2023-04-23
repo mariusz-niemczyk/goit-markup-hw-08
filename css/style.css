@@ -427,6 +427,30 @@ body {
   flex-wrap: wrap;
   gap: 28px;
 }
+.portfolio-list > li {
+  position: relative;
+  display: inline-block;
+}
+.description-hv {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-full-white);
+  letter-spacing: 0.03em;
+  display: none;
+}
+.technocrack-box:hover .description-hv {
+  display: block;
+  position: absolute;
+  max-width: 370px;
+  height: 294px;
+  padding-top: 49px;
+  padding-left: 24px;
+  padding-right: 45px;
+  background: rgba(33, 150, 243, 0.9);
+}
 
 .portfolio-list > li > h3 {
   border-right: 1px solid #eeeeee;
