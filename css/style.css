@@ -107,6 +107,7 @@ body {
 .underline-nav {
   position: relative;
 }
+
 .underline-nav::after {
   content: "";
   position: absolute;
