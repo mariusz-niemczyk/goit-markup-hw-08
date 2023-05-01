@@ -22,7 +22,7 @@
     />
   </head>
   <body>
-      <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a href="./index.html" class="menu-link-logo-type link"
           ><span class="menu-logo">Web</span>Studio</a
@@ -67,7 +67,23 @@
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
 
-          <button type="button" class="button-item">Zamów usługę</button>
+          <button data-modal-open type="button" class="button-item">
+            Zamów usługę
+          </button>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div 5="container-modal">
+              <div class="modal">
+                <button
+                  data-modal-close
+                  class="modal-close-button"
+                  type="button"
+                >
+                  x
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -378,5 +394,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
