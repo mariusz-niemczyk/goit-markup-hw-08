@@ -283,6 +283,9 @@ body {
 .modal > button {
   justify-content: center;
 }
+.modal > button:hover {
+  cursor: pointer;
+}
 
 .container-effect-art {
   display: flex;
