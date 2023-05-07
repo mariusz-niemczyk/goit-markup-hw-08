@@ -72,15 +72,86 @@
           </button>
 
           <div class="backdrop is-hidden" data-modal>
-            <div 5="container-modal">
+            <div class="container-modal">
               <div class="modal">
                 <button
                   data-modal-close
                   class="modal-close-button"
                   type="button"
                 >
-                  x
+                  X
                 </button>
+                <div class="form-container" autocomplete="off">
+                  <form class="contact-form">
+                    <h3 class="form-tittle">
+                      Zostaw swoje dane w formularzu ponizej
+                    </h3>
+                    <div class="input-container">
+                    <div class="inputs-size">
+                      <label for="name">Imię</label>
+                      <input type="text" name="name" id="name" required />
+                        <svg width="18px" height="18px" class="input-icon">
+                  <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                </svg>
+                
+                
+                    </div>
+                    <div class="inputs-size">
+                      <label for="phone-number">Telefon </label>
+                      <input
+                      class="input-style"
+                        type="tel"
+                        name="phone"
+                        id="phone-number"
+                        required
+                      />
+                         <svg width="18px" height="18px" class="input-icon">
+                  <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+                    </div>
+                    <div class="inputs-size">
+                      <label for="email">Email</label>
+                      <input type="email" name="e-mail" id="email" required />
+                         <svg width="18px" height="18px" class="input-icon">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+                    </div>
+                    <div class="inputs-size">
+                      <label for="comment">Komentarz</label>
+                      <textarea
+                        name="comment"
+                        id="comment"
+                        rows="8"
+                       >Wprowadź komentarz</textarea>
+                    </div>
+                    </div>
+                      <div class="rules-container">
+                      <div class="check-box-size">
+                      <input
+                        type="checkbox"
+                        name="rules"
+                        value="rules"
+                        id="check"
+                        class="checkbox-input"
+                      />
+                      <label class="checkbox-label" for="check"></label>
+                      </div>
+                    
+                      <p class="rules">
+                        Oświadczam iż akceptuję
+                        <span><a href="#" class="rule-info">Regulamin</a></span>
+                        i
+                        <span>
+                          <a href="#" class="rule-info"
+                            >Polityka Prywatności</a
+                          ></span
+                        >
+                      </p>
+                      </div>
+                    </div>
+                    <button class="submit-modal" type="submit">Wyślij</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
