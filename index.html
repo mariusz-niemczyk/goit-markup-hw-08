@@ -122,8 +122,8 @@
                         name="comment"
                         id="comment"
                         rows="8"
-                        
-                       >Wprowadź komentarz</textarea>
+                        placeholder="Wprowadź komentarz"
+                       ></textarea>
                     </div>
                     </div>
                       <div class="rules-container">
@@ -460,13 +460,12 @@
         </div>
         <div class="newsletter-container">
           <h3>ZAPISZ SIĘ DO NEWSLETTERA</h3>
+          <form class="form-newsletter">
           <input type="email" name="newsletter" placeholder="E-mail" required />
-        </div>
-        <div class="button-newsletter-container">
-          <button type="button" class="newsletter-button">Zapisz się</button>
-          <svg width="24px" height="24px" class="newsletter-icon">
+          <button type="button" class="newsletter-button">Zapisz się <svg width="24px" height="24px" class="newsletter-icon">
             <use href="./images/icons.svg#icon-icon-send"></use>
-          </svg>
+          </svg></button>
+         </form>
         </div>
       </div>
     </footer>
