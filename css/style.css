@@ -370,7 +370,7 @@ input:focus + svg {
   margin-left: 12px;
 }
 
-textarea[name="comment"] {
+.inputs-size > textarea {
   display: flex;
   padding-top: 12px;
   padding-left: 16px;
@@ -379,17 +379,17 @@ textarea[name="comment"] {
   width: 448px;
   height: 120px;
   resize: none;
+}
 
+::placeholder {
+  color: rgba(117, 117, 117, 0.5);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-
-  color: #757575;
 }
-
 .rules-container {
   display: flex;
   justify-content: center;
