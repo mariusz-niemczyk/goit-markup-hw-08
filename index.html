@@ -22,36 +22,37 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="container header-container">
-        <a href="./index.html" class="menu-link-logo-type link"
-          ><span class="menu-logo">Web</span>Studio</a
+    <header>
+      <div class="container header">
+        <a href="./index.html" class="link logo"
+          ><span class="logo logo2">Web</span>Studio</a
         >
 
         <nav class="navigation">
-          <div class="underline-nav">
-            <a href="./index.html" class="link nav-item">Agencja</a>
-          </div>
-          <a href="./portfolio.html" class="link nav-item">Portfolio</a>
-          <a href="#" class="link nav-item">Kontakt</a>
+          <a
+            href="./index.html"
+            class="link navigation__link navigation__link--active"
+            >Agencja</a
+          >
+
+          <a href="./portfolio.html" class="link navigation__link">Portfolio</a>
+          <a href="#" class="link navigation__link">Kontakt</a>
         </nav>
 
-        <div class="contact-header">
-          <div class="envelope-effect">
-            <svg width="16px" height="10px">
+        <div class="contact">
+          <div class="contact__item">
+            <svg width="16" height="10">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <a href="maiL:info@devstudio.com" class="link header-contact-link"
+            <a href="maiL:info@devstudio.com" class="link contact__link"
               >info@devstudio.com</a
             >
           </div>
-
-          <div class="phone-effect">
-            <svg width="10px" height="16px">
+          <div class="contact__item">
+            <svg width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-
-            <a href="tel:48111111111" class="link header-contact-link"
+            <a href="tel:48111111111" class="link contact__link"
               >+48&nbsp;111&nbsp;111&nbsp;111</a
             >
           </div>
@@ -61,13 +62,13 @@
     <main>
       <!-- HERO -->
 
-      <section class="container-effect-background">
-        <div class="container container-effect-box">
-          <h1 class="effect-tittle">
+      <section class="background">
+        <div class="container business">
+          <h1 class="business__tittle">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
 
-          <button data-modal-open type="button" class="button-item">
+          <button data-modal-open type="button" class="business__btn">
             Zamów usługę
           </button>
 
@@ -87,57 +88,60 @@
                       Zostaw swoje dane w formularzu ponizej
                     </h3>
                     <div class="input-container">
-                    <div class="inputs-size">
-                      <label for="name">Imię</label>
-                      <input type="text" name="name" id="name" required />
+                      <div class="inputs-size">
+                        <label for="name">Imię</label>
+                        <input type="text" name="name" id="name" required />
                         <svg width="18px" height="18px" class="input-icon">
-                  <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-                </svg>
-                
-                
-                    </div>
-                    <div class="inputs-size">
-                      <label for="phone-number">Telefon </label>
-                      <input
-                      class="input-style"
-                        type="tel"
-                        name="phone"
-                        id="phone-number"
-                        required
-                      />
-                         <svg width="18px" height="18px" class="input-icon">
-                  <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-                </svg>
-                    </div>
-                    <div class="inputs-size">
-                      <label for="email">Email</label>
-                      <input type="email" name="e-mail" id="email" required />
-                         <svg width="18px" height="18px" class="input-icon">
-                  <use href="./images/icons.svg#icon-Vector"></use>
-                </svg>
-                    </div>
-                    <div class="inputs-size">
-                      <label for="comment">Komentarz</label>
-                      <textarea class="test"
-                        name="comment"
-                        id="comment"
-                        rows="8"
-                        placeholder="Wprowadź komentarz"
-                       ></textarea>
-                    </div>
-                    </div>
-                      <div class="rules-container">
-                      <div class="check-box-size">
-                      <input
-                        type="checkbox"
-                        name="rules"
-                        value="rules"
-                        id="check"
-                        class="checkbox-input"
-                      />
-                      <label class="checkbox-label" for="check"></label>
+                          <use
+                            href="./images/icons.svg#icon-person-black-18dp-1"
+                          ></use>
+                        </svg>
                       </div>
-                    
+                      <div class="inputs-size">
+                        <label for="phone-number">Telefon </label>
+                        <input
+                          class="input-style"
+                          type="tel"
+                          name="phone"
+                          id="phone-number"
+                          required
+                        />
+                        <svg width="18px" height="18px" class="input-icon">
+                          <use
+                            href="./images/icons.svg#icon-phone-black-18dp-1"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="inputs-size">
+                        <label for="email">Email</label>
+                        <input type="email" name="e-mail" id="email" required />
+                        <svg width="18px" height="18px" class="input-icon">
+                          <use href="./images/icons.svg#icon-Vector"></use>
+                        </svg>
+                      </div>
+                      <div class="inputs-size">
+                        <label for="comment">Komentarz</label>
+                        <textarea
+                          class="test"
+                          name="comment"
+                          id="comment"
+                          rows="8"
+                          placeholder="Wprowadź komentarz"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="rules-container">
+                      <div class="check-box-size">
+                        <input
+                          type="checkbox"
+                          name="rules"
+                          value="rules"
+                          id="check"
+                          class="checkbox-input"
+                        />
+                        <label class="checkbox-label" for="check"></label>
+                      </div>
+
                       <p class="rules">
                         Oświadczam iż akceptuję
                         <span><a href="#" class="rule-info">Regulamin</a></span>
@@ -148,7 +152,6 @@
                           ></span
                         >
                       </p>
-                      </div>
                     </div>
                     <button class="submit-modal" type="submit">Wyślij</button>
                   </form>
@@ -390,7 +393,7 @@
       </section>
     </main>
     <!-- Stopka strony-->
-   <footer class="footer-background">
+    <footer class="footer-background">
       <div class="footer-flex-container container">
         <div class="footer-box-effect">
           <a href="./index.html" class="menu-link-logo-type link"
@@ -461,11 +464,19 @@
         <div class="newsletter-container">
           <h3>ZAPISZ SIĘ DO NEWSLETTERA</h3>
           <form class="form-newsletter">
-          <input type="email" name="newsletter" placeholder="E-mail" required />
-          <button type="button" class="newsletter-button">Zapisz się <svg width="24px" height="24px" class="newsletter-icon">
-            <use href="./images/icons.svg#icon-icon-send"></use>
-          </svg></button>
-         </form>
+            <input
+              type="email"
+              name="newsletter"
+              placeholder="E-mail"
+              required
+            />
+            <button type="button" class="newsletter-button">
+              Zapisz się
+              <svg width="24px" height="24px" class="newsletter-icon">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
