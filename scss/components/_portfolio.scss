@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   gap: 28px;
   &__list {
-    background-color: getbackgroundColor("fifth");
+    background-color: getbackgroundColor("fourth");
     max-width: 370px;
     border: 0px solid #eeeeee;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -14,12 +14,30 @@
   &__tittle {
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fontMedium;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: getColor("primary");
+    display: flex;
+    padding: 20px 24px 4px;
   }
   &__text {
-    background-color: getbackgroundColor("fifth");
+    background-color: getbackgroundColor("fourth");
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fontSmall;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: getColor("secondary");
+    display: flex;
+    padding: 4px 24px 20px;
   }
 }
 
