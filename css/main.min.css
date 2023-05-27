@@ -206,7 +206,7 @@ body {
   color: #757575;
   text-decoration: none;
 }
-.contact__item:hover a, .contact__item:focus a, .contact__item:hover, .contact__item:focus {
+.contact__item:hover a, .contact__item:focus a, .contact__item:hover svg, .contact__item:focus svg {
   color: #2196f3;
   fill: #2196f3;
   cursor: pointer;
@@ -799,6 +799,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 9px;
+  width: 250px;
 }
 .address__link {
   font-family: "Roboto", "sans-serif";

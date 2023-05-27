@@ -44,6 +44,7 @@
     text-decoration: none;
     position: relative;
   }
+
   &__link:hover {
     color: getColor("third");
     cursor: pointer;
@@ -98,8 +99,8 @@
   }
   &__item:hover a,
   &__item:focus a,
-  &__item:hover,
-  &__item:focus {
+  &__item:hover svg,
+  &__item:focus svg {
     color: getColor("third");
     fill: getColor("third");
     cursor: pointer;
