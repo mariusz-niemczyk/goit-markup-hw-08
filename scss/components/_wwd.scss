@@ -1,0 +1,35 @@
+@use "../utils/vars" as *;
+
+.wwd {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  &__box {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+  &__list {
+    position: relative;
+    display: inline-flex;
+  }
+  &__text {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fontMedium;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor("fourth");
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

@@ -1,0 +1,222 @@
+@use "../utils/vars" as *;
+
+.background {
+  background-image: url("./../../images/background-header.jpg");
+  background-repeat: no-repeat;
+}
+.business {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  &__tittle {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fontBig;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: getColor("fourth");
+    display: flex;
+    max-width: 696px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__btn {
+    padding: 10px 41px 10px 42px;
+  }
+}
+.is-hidden .modal {
+  transform: scale(0);
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 40px 40px 40px 40px;
+  width: 528px;
+  height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: getbackgroundColor("fourth");
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.2s ease-in;
+  &__close {
+    border-radius: 50%;
+    background-color: getbackgroundColor("fourth");
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &__close:hover {
+    cursor: pointer;
+  }
+}
+.form {
+  &__tittle {
+    padding-bottom: 12px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: getColor("primary");
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-right: 40px;
+  }
+  &__label {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: getColor("secondary");
+  }
+  &__input {
+    padding-left: 40px;
+    position: relative;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+    padding-bottom: 2px;
+  }
+  &__textarea {
+    display: flex;
+    padding-top: 12px;
+    padding-left: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 120px;
+    resize: none;
+  }
+  &__input:hover,
+  &__input:focus-within,
+  &__textarea:hover,
+  &__textarea:focus-within {
+    border: 1px solid getbackgroundColor("third");
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+  &__input:hover ~ svg,
+  &__input:focus ~ svg {
+    fill: getbackgroundColor("third");
+  }
+  &__icon {
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 12px;
+  }
+  &__button {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+  }
+  &__button:hover {
+    cursor: pointer;
+  }
+}
+
+::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.statement {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  gap: 7px;
+  align-items: center;
+  &__checkbox {
+    position: relative;
+    width: 16px;
+    height: 15px;
+  }
+  &__input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  &__label {
+    display: block;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: getbackgroundColor("fourth");
+    cursor: pointer;
+  }
+
+  &__label:hover {
+    border-color: getbackgroundColor("third");
+    border-radius: 2px;
+  }
+  &__label::after {
+    content: "";
+    position: absolute;
+    border: 0.2px solid getbackgroundColor("fourth");
+    right: 4px;
+    top: 2px;
+    width: 50%;
+    height: 50%;
+    transform: rotate(-52deg);
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    border-color: getbackgroundColor("fourth");
+  }
+  &__input:checked ~ &__label {
+    background: getbackgroundColor("third");
+    border-radius: 2px;
+    border: 1px solid getbackgroundColor("third");
+  }
+}
+
+.rules {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: $fontSmall;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: getColor("secondary");
+
+  &__info {
+    color: getColor("third");
+  }
+}

@@ -1,0 +1,65 @@
+@use "../utils/vars" as *;
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  &__list {
+    background-color: getbackgroundColor("fifth");
+    max-width: 370px;
+    border: 0px solid #eeeeee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &__tittle {
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+  }
+  &__text {
+    background-color: getbackgroundColor("fifth");
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+  &__box {
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 370px;
+    height: 294px;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+  &__box:hover,
+  &__box:focus {
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+  &__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fontSmall;
+    font-size: 18px;
+    line-height: 1.55;
+    color: getColor("fourth");
+    letter-spacing: 0.03em;
+    padding-top: 49px;
+    padding-left: 24px;
+    padding-right: 45px;
+    padding-bottom: 49px;
+  }
+}
+
+.overlay:hover .overlay__box,
+.overlay:focus .overlay__box {
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

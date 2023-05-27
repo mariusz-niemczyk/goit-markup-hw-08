@@ -1,0 +1,29 @@
+$fontColor: (
+  "primary": #212121,
+  "secondary": #757575,
+  "third": #2196f3,
+  "fourth": #fff,
+  "logo": #000,
+);
+
+$backgroundColor: (
+  "primary": #e5e5e5,
+  "secondary": #2f303a,
+  "third": #2196f3,
+  "fourth": #fff,
+  "fifth": #f5f4fa,
+  "six": #afb1b8,
+);
+
+$main-font: "Roboto", "sans-serif";
+$secondary-font: "Raleway", "sans-serif";
+$fontSmall: 500;
+$fontMedium: 700;
+$fontBig: 900;
+
+@function getbackgroundColor($key-2) {
+  @return map-get($backgroundColor, $key-2);
+}
+@function getColor($key) {
+  @return map-get($fontColor, $key);
+}

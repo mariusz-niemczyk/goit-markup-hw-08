@@ -1,0 +1,33 @@
+@use "../utils/vars" as *;
+
+.customer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    width: 170px;
+    height: 92px;
+    fill: getbackgroundColor("six");
+    align-items: center;
+    text-align: center;
+    border: 1px solid getbackgroundColor("six");
+    border-radius: 4px;
+    color: getbackgroundColor("six");
+  }
+  &__item:hover,
+  &__item:focus {
+    fill: getbackgroundColor("third");
+    border-color: getbackgroundColor("third");
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+}

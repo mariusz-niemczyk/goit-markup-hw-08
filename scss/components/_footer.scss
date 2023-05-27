@@ -1,0 +1,149 @@
+@use "../utils/vars" as *;
+
+.footer {
+  background-color: getbackgroundColor("secondary");
+  &__container {
+    display: flex;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: 70px;
+    gap: 20px;
+  }
+  &__logo {
+    color: getColor("third");
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: $fontMedium;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+  &__logo--1 {
+    color: getColor("fourth");
+  }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  &__link {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fontSmall;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__link:hover,
+  &__link:focus {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    text-decoration: underline;
+  }
+  &__link--1 {
+    color: getColor("fourth");
+  }
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fontMedium;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor("fourth");
+    margin-top: 72px;
+  }
+  &__box {
+    display: flex;
+    gap: 10px;
+  }
+  &__icon {
+    fill: getbackgroundColor("fourth");
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    background: getbackgroundColor("third");
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+}
+
+.newsletter {
+  padding-top: 72px;
+  margin-left: 78px;
+  &__tittle {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: $fontMedium;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor("fourth");
+    padding-bottom: 20px;
+  }
+  &__form {
+    display: flex;
+    gap: 12px;
+  }
+  &__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    color: getColor("fourth");
+  }
+  &__input:hover,
+  &__input:focus-within {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+  &__button {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px;
+    width: 200px;
+    height: 50px;
+  }
+  &__button:hover,
+  &__button:focus {
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon {
+    margin-left: 24px;
+    margin-right: 0;
+  }
+}

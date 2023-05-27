@@ -1,0 +1,111 @@
+@use "../utils/vars" as *;
+
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.logo {
+  color: getColor("primary");
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo2 {
+  color: getColor("third");
+}
+
+.navigation {
+  display: flex;
+  gap: 46px;
+  align-items: center;
+  margin-left: 93px;
+  margin-right: 371px;
+
+  &__link {
+    color: getColor("primary");
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    position: relative;
+  }
+  &__link:hover {
+    color: getColor("third");
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    text-decoration: none;
+  }
+  &__link--active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    margin-top: 30px;
+    display: block;
+    background-color: getbackgroundColor("third");
+    border-radius: 2px;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 227px;
+  gap: 30px;
+  &__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    fill: getColor("secondary");
+  }
+  &__item:hover,
+  &__item:focus {
+    color: getColor("third");
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+  &__link {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: getColor("secondary");
+    text-decoration: none;
+  }
+  &__item:hover a,
+  &__item:focus a,
+  &__item:hover,
+  &__item:focus {
+    color: getColor("third");
+    fill: getColor("third");
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    text-decoration: none;
+  }
+}
