@@ -27,3 +27,8 @@ $fontBig: 900;
 @function getColor($key) {
   @return map-get($fontColor, $key);
 }
+
+$phoneMax: 767px;
+$tabletMin: 768px;
+$tabletMax: 1199px;
+$desktopMin: 1200px;
