@@ -1,8 +1,15 @@
 @use "../utils/vars" as *;
 
 .background {
-  background-image: url("../images/background-header.jpg");
+  background-image: linear-gradient(
+      90deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 0%
+    ),
+    url("../images/background-header.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .business {
   display: flex;
