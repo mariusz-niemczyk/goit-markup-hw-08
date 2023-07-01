@@ -1,0 +1,134 @@
+@use "../utils/vars" as *;
+@use "../utils/mixins" as *;
+
+.navigation-mobile {
+  position: absolute;
+  right: 0;
+  padding-top: 10px;
+  padding-right: 22px;
+  &__toggle {
+    background-color: transparent;
+    border: none;
+    &__toggle:hover ~ svg,
+    &__toggle:focus ~ svg {
+      cursor: pointer;
+      fill: blue;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: color;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.menu-container {
+  position: fixed;
+  background-color: getbackgroundColor("fourth");
+  inset: 0;
+
+  transform: translateX(100%);
+  &__toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.mobile-navigation {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-top: 48px;
+  gap: 36px;
+
+  &__link {
+    color: #212121;
+    font-size: 40px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: #2196f3;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+}
+
+.mobile-contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 302px;
+  padding-left: 40px;
+  gap: 32px;
+
+  &__link {
+    color: #2196f3;
+    font-size: 34px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.68px;
+    text-decoration: none;
+  }
+  &__link:hover,
+  &__link:focus {
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+  &__link2 {
+    color: #757575;
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    text-decoration: none;
+  }
+  &__link2:hover,
+  &__link2:focus {
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+}
+
+.mobile-social {
+  display: flex;
+  padding-left: 40px;
+  padding-top: 64px;
+  gap: 10px;
+
+  &__link {
+    color: #2196f3;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+    text-decoration: none;
+  }
+  &__link:hover,
+  &__link:focus {
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+  &__content {
+    color: rgba(33, 33, 33, 0.2);
+  }
+}

@@ -1,9 +1,22 @@
 @use "../utils/vars" as *;
+@use "../utils/mixins" as *;
 
 .article {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
+  width: 100%;
+
+  @include tablet {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
   &__tittle {
     font-family: $main-font;
     font-style: normal;
@@ -14,28 +27,51 @@
     text-transform: uppercase;
     color: var(--color-light-black);
     margin-bottom: 10px;
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+    @include desktop {
+      text-align: left;
+    }
   }
   &__text {
     font-family: $main-font;
     font-style: normal;
-    font-weight: $fontSmall;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 24px;
     letter-spacing: 0.03em;
     color: getColor("secondary");
-    text-align: justify;
-    max-width: 270px;
-    max-height: 75px;
+    text-align: center;
+
+    @include tablet {
+      max-width: 354px;
+      max-height: 120px;
+      text-align: left;
+    }
+    @include desktop {
+      max-width: 273px;
+      max-height: 75px;
+      text-align: justify;
+    }
   }
   &__svg {
     align-items: center;
     justify-content: center;
     text-align: center;
-    max-width: 270px;
-    max-height: 120px;
+    width: 100%;
     background-color: getbackgroundColor("fifth");
     padding-top: 25px;
     padding-bottom: 25px;
     margin-bottom: 30px;
+    @include tablet {
+      max-width: 354px;
+      max-height: 120px;
+    }
+    @include desktop {
+      max-width: 270px;
+      max-height: 120px;
+    }
   }
 }

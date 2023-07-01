@@ -1,8 +1,11 @@
 @use "../utils/vars" as *;
+@use "../utils/mixins" as *;
 
 .header {
+  display: flex;
   border-bottom: 1px solid #ececec;
-
+  justify-content: space-between;
+  align-items: center;
   &__container {
     display: flex;
     align-items: center;
@@ -27,12 +30,20 @@
 }
 
 .navigation {
-  display: flex;
-  gap: 46px;
-  align-items: center;
-  margin-left: 93px;
-  margin-right: auto;
+  display: none;
 
+  @include tablet {
+    display: flex;
+    margin-left: 83px;
+    gap: 46px;
+    align-items: center;
+  }
+  @include desktop {
+    display: flex;
+    margin-left: 93px;
+    gap: 46px;
+    align-items: center;
+  }
   &__link {
     color: getColor("primary");
     font-family: $main-font;
@@ -59,19 +70,33 @@
     position: absolute;
     width: 100%;
     height: 4px;
-    margin-top: 30px;
+
     display: block;
     background-color: getbackgroundColor("third");
     border-radius: 2px;
+    @include tablet {
+      margin-top: 35px;
+    }
+    @include desktop {
+      margin-top: 30px;
+    }
   }
 }
 
 .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 227px;
-  gap: 30px;
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 101px;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    margin-left: 345px;
+  }
+
   &__item {
     display: flex;
     gap: 10px;

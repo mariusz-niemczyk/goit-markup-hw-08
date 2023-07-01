@@ -27,7 +27,49 @@
         <a href="./index.html" class="link logo"
           ><span class="logo logo2">Web</span>Studio</a
         >
-
+        <div class="navigation-mobile">
+          <button
+            type="button"
+            class="navigation-mobile__toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="navigation-mobile__button" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-container__toggle js-close-menu">
+            <svg width="40px" height="40px">
+              <use href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <div class="mobile-navigation">
+            <a class="mobile-navigation__link" href="./index.html">Agencja</a>
+            <a class="mobile-navigation__link" href="./portfolio.html"
+              >Portfolio</a
+            >
+            <a class="mobile-navigation__link" href="#">Kontakt</a>
+          </div>
+          <div class="mobile-contact">
+            <a class="mobile-contact__link" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+            <a class="mobile-contact__link2" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
+          <div class="mobile-social">
+            <a class="mobile-social__link" href="#">Instagram</a>
+            <p class="mobile-social__content">|</p>
+            <a class="mobile-social__link" href="#">Twitter</a>
+            <p class="mobile-social__content">|</p>
+            <a class="mobile-social__link" href="#">Facebook</a>
+            <p class="mobile-social__content">|</p>
+            <a class="mobile-social__link" href="#">LinkedIn</a>
+          </div>
+        </div>
         <nav class="navigation">
           <a
             href="./index.html"
@@ -254,6 +296,15 @@
                 alt="Product Designer"
                 width="270"
                 height="260"
+                srcset="
+                  images/product_designerMobile@1x.jpg  450w,
+                  images/product_designerMobile@2x.jpg  900w,
+                  images/product_designerTablet@1x.jpg  354w,
+                  images/product_designerTablet@2x.jpg  708w,
+                  images/product_designerDekstop@1x.jpg 270w,
+                  images/product_designerDesktop@2x.jpg 540w
+                "
+                sizes="(min-width:768px) 354px, (min-width: 1200px)"
               />
               <p class="team__name"><b>John Doe</b></p>
               <p class="team__role">Product Designer</p>
@@ -300,6 +351,15 @@
                 alt="Frontend Developer"
                 width="270"
                 height="260"
+                srcset="
+                  images/frontendMobile@1x.jpg  450w,
+                  images/frontendMobile@2x.jpg  900w,
+                  images/frontendTablet@1x.jpg  354w,
+                  images/frontendTablet@2x.jpg  708w,
+                  images/frontendDekstop@1x.jpg 270w,
+                  images/frontendDesktop@2x.jpg 540w
+                "
+                sizes="(min-width:768px) 354px, (min-width: 1200px)"
               />
               <p class="team__name"><b>John Doe</b></p>
               <p class="team__role">Frontend Developer</p>
@@ -345,7 +405,17 @@
                 alt="Marketing"
                 width="270"
                 height="260"
+                srcset="
+                  images/marketingMobile@1x.jpg  450w,
+                  images/marketingMobile@2x.jpg  900w,
+                  images/marketingTablet@1x.jpg  354w,
+                  images/marketingTablet@2x.jpg  708w,
+                  images/marketingDekstop@1x.jpg 270w,
+                  images/marketingDesktop@2x.jpg 540w
+                "
+                sizes="(min-width:768px) 354px, (min-width: 1200px)"
               />
+
               <p class="team__name"><b>John Doe</b></p>
               <p class="team__role">Marketing</p>
               <div class="media">
@@ -390,6 +460,15 @@
                 alt="UI Designer"
                 width="270"
                 height="260"
+                srcset="
+                  images/uidesignerMobile@1x.jpg  450w,
+                  images/uidesignerMobile@2x.jpg  900w,
+                  images/uidesignerTablet@1x.jpg  354w,
+                  images/uidesignerTablet@2x.jpg  708w,
+                  images/uidesignerDekstop@1x.jpg 270w,
+                  images/uidesignerDesktop@2x.jpg 540w
+                "
+                sizes="(min-width:768px) 354px, (min-width: 1200px)"
               />
               <p class="team__name"><b>John Doe</b></p>
               <p class="team__role">UI Designer</p>
@@ -562,5 +641,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

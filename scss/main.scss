@@ -1,5 +1,7 @@
-@use "./utils/global";
 @use "./utils/vars";
+@use "./utils/mixins";
+@use "./utils/global";
+
 @use "./components/navigation";
 @use "./components/hero";
 @use "./components/article";
@@ -9,3 +11,4 @@
 @use "./components/footer";
 @use "./components/btnchoice";
 @use "./components/portfolio";
+@use "./components/mobile-menu";

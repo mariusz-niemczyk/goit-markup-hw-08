@@ -1,9 +1,12 @@
 @use "../utils/vars" as *;
-
+@use "../utils/mixins" as *;
 .wwd {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+  display: none;
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
   &__box {
     display: flex;
     flex-direction: row;

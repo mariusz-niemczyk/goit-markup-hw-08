@@ -1,17 +1,28 @@
 @use "../utils/vars" as *;
-
+@use "../utils/mixins" as *;
 .footer {
+  display: flex;
+
   background-color: getbackgroundColor("secondary");
+
   &__container {
     display: flex;
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+    }
   }
   &__box {
     display: flex;
     flex-direction: column;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: 70px;
     gap: 20px;
+    text-align: center;
+    @include desktop {
+      margin-right: 70px;
+      text-align: left;
+    }
   }
   &__logo {
     color: getColor("third");
@@ -32,7 +43,9 @@
   display: flex;
   flex-direction: column;
   gap: 9px;
-  width: 250px;
+  @include desktop {
+    width: 250px;
+  }
   &__link {
     font-family: $main-font;
     font-style: normal;
@@ -59,6 +72,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: center;
+  @include desktop {
+    text-align: left;
+  }
   &__text {
     font-family: $main-font;
     font-style: normal;
@@ -68,11 +85,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: getColor("fourth");
-    margin-top: 72px;
+    @include desktop {
+      margin-top: 72px;
+    }
   }
   &__box {
     display: flex;
     gap: 10px;
+    justify-content: center;
   }
   &__icon {
     fill: getbackgroundColor("fourth");
@@ -92,8 +112,14 @@
 }
 
 .newsletter {
-  padding-top: 72px;
-  margin-left: 78px;
+  padding-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @include desktop {
+    padding-top: 72px;
+    margin-left: 78px;
+  }
   &__tittle {
     font-family: $main-font;
     font-style: normal;
@@ -107,7 +133,13 @@
   }
   &__form {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    @include desktop {
+      flex-direction: row;
+      gap: 12px;
+    }
   }
   &__input {
     border: 1px solid rgba(255, 255, 255, 0.3);
