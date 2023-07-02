@@ -52,15 +52,14 @@ img {
 
 body,
 html {
-  overflow-x: hidden;
+  width: 100%;
   font-family: "Roboto", sans-serif;
   background-color: getbackgroundColor("fourth");
   box-sizing: border-box;
-  @include desktop {
-    overflow-x: auto;
-  }
-  @include tablet {
-    overflow-x: auto;
+
+  overflow-x: hidden;
+  @media screen and (max-width: 320px) {
+    overflow-x: scroll;
   }
 }
 

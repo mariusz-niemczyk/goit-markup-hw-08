@@ -27,7 +27,7 @@
   position: fixed;
   background-color: getbackgroundColor("fourth");
   inset: 0;
-
+  max-height: 796px;
   transform: translateX(100%);
   &__toggle {
     position: absolute;
@@ -35,6 +35,10 @@
     top: 0;
     background-color: transparent;
     border: none;
+  }
+  &__toggle:hover svg,
+  &__toggle:focus ~ svg {
+    cursor: pointer;
   }
 }
 
@@ -47,6 +51,7 @@
   flex-direction: column;
   padding-left: 40px;
   padding-top: 48px;
+  padding-right: 288px;
   gap: 36px;
 
   &__link {
