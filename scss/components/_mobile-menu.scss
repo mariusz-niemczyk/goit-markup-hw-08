@@ -27,6 +27,7 @@
   position: fixed;
   background-color: getbackgroundColor("fourth");
   inset: 0;
+  z-index: 1;
 
   transform: translateX(100%);
   &__toggle {
