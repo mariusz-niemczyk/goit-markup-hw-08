@@ -27,12 +27,12 @@
   position: fixed;
   background-color: getbackgroundColor("fourth");
   inset: 0;
-  max-height: 796px;
+
   transform: translateX(100%);
   &__toggle {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 8px;
+    top: 8px;
     background-color: transparent;
     border: none;
   }
