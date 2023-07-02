@@ -9,17 +9,17 @@
   &__toggle {
     background-color: transparent;
     border: none;
-    &__toggle:hover ~ svg,
-    &__toggle:focus ~ svg {
-      cursor: pointer;
-      fill: blue;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-property: color;
-    }
-    @include tablet {
-      display: none;
-    }
+  }
+  &__toggle:hover,
+  &__toggle:focus {
+    cursor: pointer;
+    fill: getColor("third");
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+  @include tablet {
+    display: none;
   }
 }
 
@@ -50,16 +50,16 @@
   gap: 36px;
 
   &__link {
-    color: #212121;
+    color: getColor("primary");
     font-size: 40px;
-    font-family: Roboto;
-    font-weight: 500;
+    font-family: $main-font;
+    font-weight: $fontSmall;
     letter-spacing: 0.8px;
     text-decoration: none;
   }
   &__link:hover,
   &__link:focus {
-    color: #2196f3;
+    color: getColor("third");
     cursor: pointer;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,10 +75,10 @@
   gap: 32px;
 
   &__link {
-    color: #2196f3;
+    color: getColor("third");
     font-size: 34px;
-    font-family: Roboto;
-    font-weight: 500;
+    font-family: $main-font;
+    font-weight: $fontSmall;
     letter-spacing: 0.68px;
     text-decoration: none;
   }
@@ -90,10 +90,10 @@
     transition-property: color;
   }
   &__link2 {
-    color: #757575;
+    color: getColor("secondary");
     font-size: 24px;
-    font-family: Roboto;
-    font-weight: 500;
+    font-family: $main-font;
+    font-weight: $fontSmall;
     letter-spacing: 0.48px;
     text-decoration: none;
   }
@@ -113,10 +113,10 @@
   gap: 10px;
 
   &__link {
-    color: #2196f3;
+    color: getColor("third");
     font-size: 18px;
-    font-family: Roboto;
-    font-weight: 500;
+    font-family: $main-font;
+    font-weight: $fontSmall;
     line-height: 22px;
     letter-spacing: 0.36px;
     text-decoration: none;
